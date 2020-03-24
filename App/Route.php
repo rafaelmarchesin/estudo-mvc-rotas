@@ -27,6 +27,7 @@ class Route
 
         switch ($this->url)
         {
+            //Os novos caminhos deverão ser explicitados aqui
             case '/':
                 $this->send_controller = [
                     'controller' => 'MainController',
