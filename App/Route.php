@@ -25,6 +25,7 @@ class Route
     {
         $this->url = $this->getURL();
         $this->url = '/' . str_replace('/', '', $this->url); //Esse tratamento serve para tirar a última barra do caminho do navegador
+        $header = 'Location: ' . $this->url;
 
         switch ($this->url)
         {

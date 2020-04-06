@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\TodoList;
+
 //Esta classe tem como objetivo receber as rotas das páginas principais
 class MainController
 {
@@ -22,6 +24,10 @@ class MainController
 
     public function todo()
     {
-        require_once __DIR__ . '/../Views/todo.phtml';
+        $db = new TodoList;
+        $db->saveTask();
+        $list = $db->getList();
+
+        include_once __DIR__ . '/../Views/todo.phtml';
     }
 }

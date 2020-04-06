@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./../script/script.js"></script>
 </head>
 <body>
     <div class="container" id="container">
@@ -15,11 +17,13 @@
         </div>
         <div class="lista" id="lista">
             <!-- Começa o FOREACH do PHP -->
-            <?php foreach ($this->views->todolist as $task): ?>
+            <?php foreach ($list as $task): ?>
+                <?php if($task['done'] == 0): ?>
                 <div class="container-tarefa" id="container-tarefa">
                     <input type="checkbox" class="tarefa" id="tarefa" name="tarefa" value="tarefa">
                     <?php echo $task['task'] ?>
                 </div>
+                <?php endif; ?>
             <?php endforeach; ?>
             <!-- Termina o FOREACH do PHP -->
         </div>
