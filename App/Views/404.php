@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Erro 404</h1>
-    <h2>Página não encontrada. Tence outro endereço.</h2>
+    <h2>Página não encontrada. Tente outro endereço.</h2>
     <p>Acesse um dos links a seguir:</p>
     <ul>
         <li><a href="/">Home</a></li>
