@@ -19,4 +19,9 @@ class MainController
     {
         require_once __DIR__ . '/../Views/insertText.phtml';
     }
+
+    public function todo()
+    {
+        require_once __DIR__ . '/../Views/todo.phtml';
+    }
 }

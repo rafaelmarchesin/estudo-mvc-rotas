@@ -46,6 +46,14 @@ class Route
                 return $this->send_controller;
                 break;
 
+            case "/todo":
+                $this->send_controller = [
+                    'controller' => 'MainController',
+                    'method' => 'todo'
+                ];
+                return $this->send_controller;
+                break;
+
             //Caso o caminho acessado seja inválido, é executada
             //uma página específica para caminhos inválidos
             default:
