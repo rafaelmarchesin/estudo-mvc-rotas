@@ -14,4 +14,9 @@ class MainController
     {
         require_once __DIR__ . '/../Views/index.phtml';
     }
+
+    public function insertText()
+    {
+        require_once __DIR__ . '/../Views/insertText.phtml';
+    }
 }

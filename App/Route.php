@@ -24,6 +24,7 @@ class Route
     public function routeController()
     {
         $this->url = $this->getURL();
+        $this->url = '/' . str_replace('/', '', $this->url); //Esse tratamento serve para tirar a última barra do caminho do navegador
 
         switch ($this->url)
         {
@@ -32,6 +33,15 @@ class Route
                 $this->send_controller = [
                     'controller' => 'MainController',
                     'method' => 'index'
+                ];
+                return $this->send_controller;
+                break;
+            
+            //Caminho para a página de publicação de conteúdo
+            case "/publish":
+                $this->send_controller = [
+                    'controller' => 'MainController',
+                    'method' => 'insertText'
                 ];
                 return $this->send_controller;
                 break;
