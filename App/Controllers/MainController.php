@@ -30,4 +30,12 @@ class MainController
 
         include_once __DIR__ . '/../Views/todo.phtml';
     }
+
+    public function recebe()
+    {
+        $db = new TodoList;
+        $db->deleteTask();
+        $list = $db->getList();
+        include_once __DIR__ . '/../Views/recebe.phtml';
+    }
 }

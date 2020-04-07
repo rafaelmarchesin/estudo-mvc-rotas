@@ -54,6 +54,14 @@ class Route
                 ];
                 return $this->send_controller;
                 break;
+            
+            case "/recebe":
+                $this->send_controller = [
+                    'controller' => 'MainController',
+                    'method' => 'recebe'
+                ];
+                return $this->send_controller;
+                break;
 
             //Caso o caminho acessado seja inválido, é executada
             //uma página específica para caminhos inválidos
