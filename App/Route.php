@@ -63,6 +63,15 @@ class Route
                 return $this->send_controller;
                 break;
 
+            case "/api-tasks":
+                $this->send_controller = [
+                    'controller' => 'MainController',
+                    'method' => 'apiTasks'
+                ];
+                return $this->send_controller;
+                break;
+
+
             //Caso o caminho acessado seja inválido, é executada
             //uma página específica para caminhos inválidos
             default:

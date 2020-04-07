@@ -38,4 +38,9 @@ class MainController
         $list = $db->getList();
         include_once __DIR__ . '/../Views/recebe.phtml';
     }
+
+    public function apiTasks()
+    {
+        include_once __DIR__ . '/../Views/api-tasks.phtml';
+    }
 }
