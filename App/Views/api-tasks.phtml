@@ -1,1 +1,8 @@
-Está carregando com sucesso.
+<?php
+
+use App\Models\ApiGetTasks;
+
+require_once __DIR__ . '/../Models/ApiGetTasks.php';
+
+$getApiTasks = new ApiGetTasks;
+echo $getApiTasks->getTasks();
