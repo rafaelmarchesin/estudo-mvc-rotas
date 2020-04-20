@@ -1,4 +1,4 @@
-# Esrudo MVC Rotas
+# Estudo MVC Rotas
 ## Código criado para a Mentoria realizada na Yes.Technology
 
 Descrição: Projeto desenvolvido para durante a Mentoria de Desenvolvimento de Aplicações na Yes Technology.
